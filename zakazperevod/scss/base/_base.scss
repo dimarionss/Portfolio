@@ -1,0 +1,42 @@
+$fontmain: 'Roboto', sans-serif;
+$colormain: #cb0e16;
+
+
+body {
+  margin: 0;
+  font-family: $fontmain;
+  font-size: 20px;
+  color: #ffffff;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: $colormain;
+}
+
+.btn {
+  background: $colormain;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 15px;
+
+  /*padding: 15px;*/
+  height: 40px;
+  width: 230px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5), inset 0px 0px 5px rgba(248, 248, 248, 0.53);
+  border: none;
+  color:#fff;
+
+  &:hover {
+    background: rgb(247, 14, 23);
+    color:#fff;
+  }
+}

@@ -1,0 +1,40 @@
+/*sections 3*/
+.perevod{
+  border-bottom: 1px dashed #333;
+  border-top: 1px dashed #333;
+}
+.perevod .containform{
+  height: 230px;
+  width: 100%;
+  border: 1px solid $colormain;
+  position: relative;
+  margin-top: 70px;
+}
+.perevod .containform h4{
+  margin: 0;
+  font-size: 22px;
+}
+.section3 {
+  background: #ffffff;
+}
+.section_images{
+  background: url("../images/perevod.jpg") no-repeat center;
+  background-size: cover;
+}
+.section3 {
+  h2, h3 {}
+
+  p {
+    color: #fff;
+    text-align: center;
+
+    &.opish2 {
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 900;
+      margin-bottom: 30px;
+    }
+  }
+}
+/*sections 3*/

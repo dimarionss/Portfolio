@@ -1,0 +1,165 @@
+@media (max-width: 767px) {
+    /* стили для xs-устройств */
+    body{
+        font-size: 16px;
+    }
+    section h3{
+        text-align: center;
+    }
+    .section3 h2, section h2, .section9 h2{
+        font-size: 35px;
+    }
+    .logo-1{
+        margin-left: 10%;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    .submenu {
+        position: absolute;
+        left: 100px;
+        top: 100%;
+    }
+    .titletext p{
+        font-size: 60px;
+
+    }
+    .titletext span{
+        font-size: 24px;
+    }
+    section .number{
+        margin-left: 45%;
+    }
+    .accordion{
+        font-size: 20px;
+        padding: 10px;
+        margin: 20px 20px 0 0;
+        width: 50%;
+    }
+    .panel{
+        width: 50%;
+        padding: 0 20px;
+        margin-left: 23.2%;
+    }
+
+    .section7 video{
+        width: 550px;
+        height: 350px;
+    }
+    .section7 h2, h6, p{
+        text-align: center;
+    }
+    div.gallery img{
+        margin-left: 40%;
+        margin-top: 10px;
+        width: 350px;
+        height: 250px;
+    }
+    .section10 img{
+        margin-left: 25%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .logo-1{
+       margin-left: 20%;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+    }
+
+    .submenu {
+        position: absolute;
+        left: 250px;
+        top: 100%;
+    }
+    .titletext p{
+        font-size: 80px;
+
+    }
+    .titletext span{
+        font-size: 24px;
+    }
+    section .number{
+        margin-left: 45%;
+    }
+    .accordion{
+        font-size: 20px;
+        padding: 10px;
+        margin: 20px 20px 0 0;
+        width: 40%;
+    }
+    .panel{
+        width: 40%;
+        padding: 0 20px;
+        margin-left: 28.6%;
+    }
+
+    .section7 video{
+        width: 550px;
+        height: 350px;
+        margin-left: 10%;
+    }
+    .section7 h2, h6, p{
+        text-align: center;
+    }
+    div.gallery img{
+        margin-left: 20%;
+        margin-top: 10px;
+        width: 350px;
+        height: 250px;
+    }
+    .thumbs:before, .thumbs img{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .thumbs .caption .title, .thumbs .caption .info{
+        margin-left: 10%;
+    }
+    .material-icons-forum{
+        right: 120px;
+    }
+    .section10 img{
+        margin-left: 30%;
+    }
+    /* стили для sm-устройств */
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+    /* стили для md-устройств */
+    .logo-1, .logo-1 span {
+        font-size: 40px;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    .submenu {
+        position: absolute;
+        left: 100px;
+        top: 100%;
+    }
+    .accordion{
+        font-size: 20px;
+        padding: 10px;
+        margin: 25px 25px 0 0;
+    }
+    .section7 video{
+        width: 450px;
+        height: 250px;
+    }
+    div.gallery img{
+        margin: 5px 15px 0 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* стили для lg-устройств */
+
+}

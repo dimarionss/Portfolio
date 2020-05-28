@@ -1,0 +1,165 @@
+.logo-1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #fff;
+  font-size: 62px;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.container_section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.shapka {
+  background: url("../images/heder.jpg") no-repeat center;
+  background-size: cover;
+  height: 882px;
+  width: 100%;
+}
+
+.menu {
+  padding-top: 30px;
+}
+
+nav {
+  margin: 0 auto;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin-left: 23px;
+    font-size: 18px;
+
+    a {
+      font-weight: 100;
+      color: rgba(255, 255, 255, 0.8);
+      &:hover{
+        font-weight: 500;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.topmenu {
+  li a:hover {
+    color: #fff;
+  }
+  > li:hover .submenu {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+/*text middle*/
+
+.titletext {
+  text-align: right;
+
+  h1 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+}
+
+/*register form*/
+
+.infobox {
+  margin-top: 65px;
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 22px;
+  }
+
+  h2 {
+    font-weight: 300;
+    font-size: 30px;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+  }
+}
+
+/*------------menu bot------------*/
+
+.menusection {
+  background: #fff;
+
+  .container {
+    padding-top: 0;
+  }
+}
+
+.botmenu {
+  width: 100%;
+
+  ul {
+    margin: 0;
+
+    li {
+      display: inline-block;
+      float: right;
+      color: #333;
+      margin: 0px 0 10px 0;
+
+      a {
+        list-style: none;
+        padding: 0;
+        color: #333;
+        margin: 0 0 0 50px;
+        font-size: 15px;
+        font-weight: 600;
+
+        &:hover {
+          color: #f70e17;
+        }
+      }
+    }
+  }
+}
+
+/*------------menu bot------------*/
+
+.iconblock {
+  h4 {
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  span {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    border: 2px solid #cb0e17;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    color: #cb0e17;
+  }
+
+  margin-top: 80px;
+  margin-bottom: 25px;
+  width: 100%;
+
+  div {
+    margin-top: 10px;
+  }
+}
