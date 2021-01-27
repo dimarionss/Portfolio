@@ -1,0 +1,70 @@
+.button__callback {
+  position: relative;
+
+  a {
+    padding: 16px 48px;
+    background-color: #293AA4;
+    color: #fff;
+
+  }
+
+  input {
+    padding: 16px 48px;
+    background-color: #293AA4;
+    color: #fff;
+
+  }
+
+  :hover {
+    background-color: #3348CC;
+  }
+
+  .button__line img {
+    position: absolute;
+    top: -22px;
+  }
+
+  .button__line__2 img {
+    position: absolute;
+    top: -22px;
+    transform: rotate(-90deg);
+  }
+
+  .button__line__3 img {
+    position: absolute;
+    bottom: -22px;
+  }
+
+  .button__line__4 img {
+    position: absolute;
+    bottom: -22px;
+    transform: rotate(-90deg);
+  }
+
+  .button__line__5 img {
+    position: absolute;
+    top: -22px;
+    right: -14px;
+  }
+
+  .button__line__6 img {
+    position: absolute;
+    top: -22px;
+    right: -14px;
+    transform: rotate(-90deg);
+  }
+
+  .button__line__7 img {
+    position: absolute;
+    bottom: -22px;
+    right: -14px;
+  }
+
+  .button__line__8 img {
+    position: absolute;
+    bottom: -22px;
+    right: -14px;
+    transform: rotate(-90deg);
+  }
+
+}

@@ -1,0 +1,49 @@
+.menu__block{
+  margin-bottom: 18px;
+  a{
+    font-weight: bold;
+    color: inherit;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  .logo{
+    display: flex;
+    align-items: center;
+    margin-right: 56px;
+    .logo__icon{
+      margin-right: 12px;
+    }
+  }
+  .menu__main{
+    display: flex;
+    margin-right: 280px;
+    width: 100%;
+    li{
+      margin-right: 30px;
+      
+      a{
+        color: #2B2739;
+        
+      }
+      :hover{
+        color: #3348CC;
+      }
+      
+    }
+    
+    }
+  }
+  .contact{
+    display: flex;
+    align-items: center;
+    .phone, .mail{
+      display: flex;
+      margin-right: 40px;
+    }
+    img{
+      margin-right: 14px;
+    }
+
+}

@@ -1,0 +1,124 @@
+// sliderbody=========================================================================
+.sliderbody__content {
+  position: relative;
+
+  .sliderbody__text__align {
+    position: relative;
+    max-width: 1180px;
+    margin: 0px auto 40px auto;
+  }
+
+
+
+  .owl-nav {
+    max-width: 1180px;
+    margin: 50px auto 40px auto;
+
+    :first-child {
+      margin-left: 0;
+    }
+  }
+
+  .arrow-owl {
+    padding: 21px 46px;
+    border: 1px solid #E7E7E7;
+    margin: 0 8px;
+    color: #293AA4;
+    font-size: 17px;
+
+
+
+  }
+
+  .arrow-owl:hover {
+    background-color: #3348CC;
+    color: #fff;
+    transition: 0.5s;
+  }
+
+  .owl-carousel {
+
+
+    img {
+      height: 420px;
+    }
+
+  }
+
+  .sliderbody__text {
+    position: absolute;
+    top: 570px;
+    right: 0;
+    z-index: 10;
+
+    .active {
+      color: #293AA4;
+      text-decoration: underline;
+    }
+
+    a {
+      font-size: 24px;
+      color: #E7E7E7;
+    }
+
+    a:hover {
+      color: #293AA4;
+      text-decoration: underline;
+    }
+
+    span {
+      font-size: 24px;
+      color: #E7E7E7;
+    }
+  }
+
+  .owl-carousel {
+    position: relative;
+
+
+    .owlcarusel i {
+      display: none;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      color: #fff;
+    }
+
+
+    img {
+      background-color: rgba(41, 58, 164, 0.5);
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// sliderbody=========================================================================

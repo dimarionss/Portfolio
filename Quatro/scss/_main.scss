@@ -1,0 +1,80 @@
+@font-face {
+	font-family: 'PTRootUIWeb';
+	src: url('../fonts/PT%20Root%20UI_Bold/PT%20Root%20UI_Bold.eot');
+	src:
+		url('../fonts/PT%20Root%20UI_Bold/PT%20Root%20UI_Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/PT%20Root%20UI_Bold/PT%20Root%20UI_Bold.woff2') format('woff2'),
+		url('../fonts/PT%20Root%20UI_Bold/PT%20Root%20UI_Bold.woff') format('woff'),
+		url('../fonts/PT%20Root%20UI_Bold/PT%20Root%20UI_Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTRootUIWeb';
+	src: url('../fonts/PT%20Root%20UI_Medium/PT%20Root%20UI_Medium.eot');
+	src:
+		url('../fonts/PT%20Root%20UI_Medium/PT%20Root%20UI_Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/PT%20Root%20UI_Medium/PT%20Root%20UI_Medium.woff2') format('woff2'),
+		url('../fonts/PT%20Root%20UI_Medium/PT%20Root%20UI_Medium.woff') format('woff'),
+		url('../fonts/PT%20Root%20UI_Medium/PT%20Root%20UI_Medium.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTRootUIWeb';
+	src: url('../fonts/PT%20Root%20UI_Light/PT%20Root%20UI_Light.eot');
+	src:
+		url('../fonts/PT%20Root%20UI_Light/PT%20Root%20UI_Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/PT%20Root%20UI_Light/PT%20Root%20UI_Light.woff2') format('woff2'),
+		url('../fonts/PT%20Root%20UI_Light/PT%20Root%20UI_Light.woff') format('woff'),
+		url('../fonts/PT%20Root%20UI_Light/PT%20Root%20UI_Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTRootUIWeb';
+	src: url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.eot');
+	src:
+		url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.woff2') format('woff2'),
+		url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.woff') format('woff'),
+		url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.ttf') format('truetype');
+	font-weight: 400, normal;
+	font-style: normal;
+}
+
+
+
+body {
+	font-family: 'PTRootUIWeb';
+	background-color: #fff;
+	color: #2B2739;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 56px;
+	color: #ffffff;
+
+}
+
+h2 {
+	font-size: 48px;
+	line-height: 64px;
+	font-weight: bold;
+}
+
+
+.container {
+	max-width: 1920px;
+	margin: 18px auto;
+}

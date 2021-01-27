@@ -1,0 +1,163 @@
+/* стили основного контейнера слайдера */
+.slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+  height: auto;
+  img{
+    width: 100%;
+  }
+  .slider__control:hover{
+    background-color: #3348CC;
+  }
+  .slider__text{
+    position: absolute;
+    width: 872px;
+    bottom: 17%;
+    left: 4%;
+    p{
+      color: #fff;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    
+    .slider__text__h{
+      
+      margin-bottom: 26px;
+      line-height: 70px;
+    }
+    span{
+      padding: 5px 0;
+      display: inline;
+      font-weight: bold;
+	    font-size: 56px;
+      color: #ffffff;
+      background-color: #293AA4;
+      box-shadow: -12px 0 0 #293AA4, 12px 0 0 #293AA4;
+      
+    }
+    
+  }
+  .slider__text__mouse{
+    width: 40px;
+    height: 44px;
+    position: absolute;
+    right: 73px;
+    bottom: 130px;
+  }
+}
+
+/* стили для обёртки, в которой заключены слайды */
+.slider__wrapper {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+/* стили для контейнера слайдов */
+.slider__items {
+  display: flex;
+  transition: transform 0.7s ease;
+  
+}
+
+/* стили для слайдов */
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  
+}
+
+/* стили для кнопок "вперед" и "назад" */
+.slider__control {
+  position: absolute;
+  top: 44%;
+  border: 2px solid #fff;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  color: #fff;
+  text-align: center;
+  height: 55px;
+  transform: translateY(-50%);
+  font-weight: 300;
+  
+  
+}
+
+.slider__control_show {
+  display: flex;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  
+}
+
+.slider__control_prev {
+  left: 4%;
+}
+
+.slider__control_next {
+  right: 84.6%;
+  
+}
+
+
+.slider__control::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_prev{
+  padding: 21px 47px;
+}
+
+.slider__control_next{
+  padding: 21px 47px
+}
+
+// /* стили для индикаторов */
+// .slider__indicators {
+//   position: absolute;
+//   right: 0;
+//   bottom: 10px;
+//   left: 0;
+//   z-index: 15;
+//   display: flex;
+//   justify-content: center;
+//   padding-left: 0;
+//   margin-right: 15%;
+//   margin-left: 15%;
+//   list-style: none;
+//   margin-top: 0;
+//   margin-bottom: 0;
+// }
+
+// .slider__indicators li {
+//   box-sizing: content-box;
+//   flex: 0 1 auto;
+//   width: 30px;
+//   height: 4px;
+//   margin-right: 3px;
+//   margin-left: 3px;
+//   text-indent: -999px;
+//   cursor: pointer;
+//   background-color: rgba(255, 255, 255, 0.5);
+//   background-clip: padding-box;
+//   border-top: 10px solid transparent;
+//   border-bottom: 10px solid transparent;
+// }
+
+// .slider__indicators li.active {
+//   background-color: #fff;
+// }
