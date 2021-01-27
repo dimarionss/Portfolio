@@ -1,0 +1,101 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+h1 {
+  font-size: 36px;
+  color: #3b3b3b;
+}
+
+$col1: calc(100% / 12 * 1 - 20px);
+$col2: calc(100% / 12 * 2 - 20px);
+$col3: calc(100% / 12 * 3 - 20px);
+$col4: calc(100% / 12 * 4 - 20px);
+$col5: calc(100% / 12 * 5 - 20px);
+$col6: calc(100%/ 12 * 6 - 20px);
+$col7: calc(100%/ 12 * 7 - 20px);
+$col8: calc(100%/ 12 * 8 - 20px);
+$col9: calc(100%/ 12 * 9 - 20px);
+$col10: calc(100%/ 12 * 10 - 20px);
+$col11: calc(100%/ 12 * 11 - 20px);
+$col12: calc(100%/ 12 * 12 - 20px);
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+
+
+}
+
+.col-12 {
+  width: $col12;
+  margin: 0 10px;
+}
+
+.col-11 {
+  width: $col11;
+  margin: 0 10px;
+}
+
+.col-10 {
+  width: $col10;
+  margin: 0 10px;
+}
+
+.col-9 {
+  width: $col9;
+  margin: 0 10px;
+}
+
+.col-8 {
+  width: $col8;
+  margin: 0 10px;
+}
+
+.col-7 {
+  width: $col7;
+  margin: 0 10px;
+}
+
+.col-6 {
+  width: $col6;
+  margin: 0 10px;
+}
+
+.col-5 {
+  width: $col5;
+  margin: 0 10px;
+}
+
+.col-4 {
+  width: $col4;
+  margin: 0 10px;
+}
+
+.col-3 {
+  width: $col3;
+  margin: 0 10px;
+}
+
+.col-2 {
+  width: $col2;
+  margin: 0 10px;
+}
+
+.col-1 {
+  width: $col1;
+  margin: 0 10px;
+}

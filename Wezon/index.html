@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <script src="js/JQuery.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="https://use.fontawesome.com/23fd1229eb.js"></script>
+  <script src="js/custom.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header__block">
+    <section class="header__menu__block">
+      <div class="container">
+        <div class="row menu__row">
+          <div class="col-5">
+            <nav role="navigation">
+              <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                  <a href="#">
+                    <li>главная</li>
+                  </a>
+                  <a href="#">
+                    <li>компании</li>
+                  </a>
+                  <a href="#">
+                    <li>ссылка 1</li>
+                  </a>
+                  <a href="#">
+                    <li>ссылка 2</li>
+                  </a>
+                  <a href="#">
+                    <li>ссылка 3</li>
+                  </a>
+                </ul>
+              </div>
+            </nav>
+            <nav class="menu__nav__block">
+              <ul class="menu__main">
+                <li><a href="#">главная</a></li>
+                <li><a href="#" class="current">о компании</a></li>
+                <li><a href="#">ссылка 1</a></li>
+                <li><a href="#">ссылка 2</a></li>
+                <li><a href="#">ссылка 3</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-2 align__sign">
+            <div class="menu__sign__block button__main">
+              <div class="sign__button button__text">
+                <a href="#openModalsign"><img src="img/sign in.png" alt="">Вход</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="logo__block">
+      <div class="container">
+        <div class="row logo__row">
+          <div class="col-2 logo__img">
+            <img src="img/logo.png" alt="">
+          </div>
+          <div class="col-6 logo__number__block">
+            <div class="number__text__block">
+              <h3 class="nubmer">+380 98 170 00 740</h3>
+              <h3 class="nubmer">+380 98 170 00 740</h3>
+            </div>
+            <div class="logo__callme button__main">
+              <div class="callme__text button__text">
+                <a href="#openModal"><img src="img/phonecall.png" alt="">Перезвонить мне</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 cart__block">
+            <div class="cart__block__textimg">
+              <img src="img/headimg1.png" alt="" class="cart__block__icon">
+              <p class="cart__block__text">сравнение (<span id="inkrementOnespan"></span>)</p>
+            </div>
+            <div class="cart__block__textimg">
+              <img src="img/headimg2.png" alt="" class="cart__block__icon">
+              <p class="cart__block__text">избранное (<span id="inkrementTwospan"></span>)</p>
+            </div>
+            <div class="cart__block__textimg">
+              <div class='inkrement'><img src="img/inkrement.png" alt=""><span>5</span></div>
+              <img src="img/headimg3.png" alt="" class="cart__block__icon">
+              <p class="cart__block__text">корзина</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <section class="main__block">
+    <div class="container">
+      <div class="burger__block">
+        <div class="row">
+          <div class="col-3 burger">
+            <div class="burger__menu">
+              <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+
+                  <span></span>
+                  <div class="burger__text">
+                    <div class="burger__menu__text">
+                      Меню
+                    </div>
+                  </div>
+                </label>
+
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="#">Ссылка 1<i class="fa fa-chevron-right"></i></a></li>
+                  <li><a class="menu__item" href="#">Ссылка 2<i class="fa fa-chevron-right"></i></a></li>
+                  <li><a class="menu__item" href="#">Ссылка 3<i class="fa fa-chevron-right"></i></a></li>
+                  <li><a class="menu__item" href="#">Ссылка 4<i class="fa fa-chevron-right"></i></a> </li>
+                  <li><a class="menu__item" href="#">Ссылка 5<i class="fa fa-chevron-right"></i></a></li>
+                  <li><a class="menu__item" href="#">Ссылка 6<i class="fa fa-chevron-right"></i></a></li>
+                  <li><a class="menu__item" href="#">Ссылка 7<i class="fa fa-chevron-right"></i></a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-9">
+            <p id="textsearch"></p>
+            <div class="search__block">
+              <form class="search-form">
+                <input id="search" type="search" class="input-search" placeholder="Поиск по сайту" />
+                <div class="search__cattegory">
+                  <span><i class="fa fa-sort-down"></i></span>
+                  <select class="select__form__search">
+                    <option value="" hidden disabled selected>Все категории</option>
+                    <option>Категория 1</option>
+                    <option>Категория 2</option>
+                    <option>Категория 3</option>
+                    <option>Категория 4</option>
+                  </select>
+                </div>
+                <div class="search__button__text button__text">
+                  <input type="submit" value="поиск" onclick="return validSeacrh()">
+                </div>
+              </form>
+            </div>
+            <div class="filter__link__block">
+              <nav class="filter__nav__block">
+                <ul class="filter__main">
+                  <li class="current1"><a href="#"><img src="img/filter1.png" alt="">Ссылка 1</a></li>
+                  <li><a href="#"><img src="img/filter2.png" alt="">Ссылка 2</a></li>
+                  <li><a href="#"><img src="img/filter3.png" alt="">Ссылка 3</a></li>
+                  <li><a href="#"><img src="img/filter4.png" alt="">Cсылка 4</a></li>
+                  <li><a href="#"><img src="img/filter5.png" alt="">Cсылка 5</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="filter__main__block">
+              <form action="" id="some-form">
+                <div class="radio">
+                  <input id="toggle-on" class="toggle toggle-left" name="toggle" value="false" type="radio" checked>
+                  <label for="toggle-on" class="btn">Tab 1</label>
+                  <input id="toggle-off" class="toggle toggle-right" name="toggle" value="true" type="radio">
+                  <label for="toggle-off" class="btn">Tab 2</label>
+                </div>
+                <div class="select">
+
+                  <div class="select_block">
+                    <select class="select__form">
+                      <option value="" hidden disabled selected>Select 1</option>
+                      <option>Select 2</option>
+                      <option>Select 3</option>
+                      <option>Select 4</option>
+                      <option>Select 5</option>
+                      <option>Select 6</option>
+                      <option>Select 7</option>
+                    </select>
+                  </div>
+                  <div class="select_block">
+                    <select class="select__form">
+                      <option value="" hidden disabled selected>Select 1</option>
+                      <option>Select 2</option>
+                      <option>Select 3</option>
+                      <option>Select 4</option>
+                      <option>Select 5</option>
+                      <option>Select 6</option>
+                      <option>Select 7</option>
+                    </select>
+                  </div>
+                  <div class="select_block">
+                    <select class="select__form">
+                      <option value="" hidden disabled selected>Select 1</option>
+                      <option>Select 2</option>
+                      <option>Select 3</option>
+                      <option>Select 4</option>
+                      <option>Select 5</option>
+                      <option>Select 6</option>
+                      <option>Select 7</option>
+                    </select>
+                  </div>
+                  <div class="select_block">
+                    <select class="select__form">
+                      <option value="" hidden disabled selected>Select 1</option>
+                      <option>Select 2</option>
+                      <option>Select 3</option>
+                      <option>Select 4</option>
+                      <option>Select 5</option>
+                      <option>Select 6</option>
+                      <option>Select 7</option>
+                    </select>
+                  </div>
+                  <div class="select_block">
+                    <select class="select__form">
+                      <option value="" hidden disabled selected>Select 1</option>
+                      <option>Select 2</option>
+                      <option>Select 3</option>
+                      <option>Select 4</option>
+                      <option>Select 5</option>
+                      <option>Select 6</option>
+                      <option>Select 7</option>
+                    </select>
+                  </div>
+                  <div class="cost__block">
+                    <p>Цена</p>
+                    <select class="select__form cost__form">
+                      <option value="" hidden disabled selected>50 |</option>
+                      <option>55 |</option>
+                      <option>75 |</option>
+                      <option>80 |</option>
+                    </select>
+                    <input type="number" onkeypress="return event.charCode >= 48" min="1">
+                  </div>
+                </div>
+                <div class="filter__button__block">
+                  <div class="filter__button__clean">
+                    <div class="button__text">
+                      <img src="img/chrest.png" alt=""><input value="Очистить фильтр" type="reset" from="some-form">
+                    </div>
+                  </div>
+                  <div class="filter__button__accept button__main">
+                    <div class="button__text">
+                      <a href="#">Применить фильтр</a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="card__block">
+    <div class="container">
+      <div class="card__block__text">
+        <div class="row card__row">
+          <div class="col-3">
+            <div class="card__name">
+              <h1>Карточки товаров</h1>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card__link__category">
+              <p><a href="#">Ссылка в каталог<img src="img/arrow.png" alt=""></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card__block__offer">
+        <div class="row">
+          <div class="card__block__offer__border">
+            <div class="col-12 card__block__offer__section">
+              <p class="mark">Mark</p>
+              <h4><a href="#">Антифриз Fosser Antifreeze
+                  FA 12 Readymix 1 л Concentrat, Germany</a></h4>
+              <div class="rating__block">
+                <form class="rating">
+                  <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                </form>
+                <p class="commets">
+                  <a href="#">Отзывы (10)</a>
+                </p>
+                <p class="remainder">
+                  В наличии: 24 шт.
+                </p>
+              </div>
+              <div class="praram__block">
+                <div class="param__block__icon">
+                  <div class="param__icon__weather">
+                    <a href="#"><img src="img/card summer.png" alt=""> летняя</a>
+                  </div>
+                  <div class="param__icon__car">
+                    <a href="#"><img src="img/card car.png" alt=""> легковая</a>
+                  </div>
+                  <div class="param__icon__new">
+                    <a href="#"><img src="img/card new.png" alt=""> новая</a>
+                  </div>
+                </div>
+                <div class="param__block__image__shina">
+                  <a href="#"><img src="img/shina1.png" alt=""></a>
+                </div>
+              </div>
+              <div class="action__block">
+                <div class="new"><img src="img/hit1.png" alt="">
+                  <p class="action__block__text">Новинка</p>
+                </div>
+                <div class="hits"><img src="img/hit2.png" alt="">
+                  <p class="action__block__text">Хит</p>
+                </div>
+                <div class="action"><img src="img/hit3.png" alt="">
+                  <p class="action__block__text">Скидка</p>
+                </div>
+              </div>
+              <div class="cost__block">
+                <div class="new__cost">599 <span>грн</span></div>
+                <div class="old__cost"><span>1 250 грн</span></div>
+              </div>
+              <div class="button__card__block">
+                <div class="logo__callme button__main">
+                  <div class="callme__text button__text">
+                    <a href="#"><img src="img/cart.png" alt="">купить товар</a>
+                  </div>
+                </div>
+              </div>
+              <div class="compare__block">
+                <div class="compare__block__content">
+                  <div class="compare__icon">
+                    <img src="img/card1.png" alt="">
+                  </div>
+                  <div class="compare__text"><a href="#" class="linkcomp" onClick="incrementOne(this)">Сравнить
+                      товар</a>
+                  </div>
+                </div>
+                <div class="compare__block__content__2">
+                  <div class="compare__icon">
+                    <img src="img/card2.png" alt="">
+                  </div>
+                  <div class="compare__text"><a href="#" class="linkcomp2" onClick="incrementTwo(this)">В избранное</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__block__offer__border">
+            <div class="col-12 card__block__offer__section">
+              <p class="mark">Mark</p>
+              <h4><a href="#">Антифриз Fosser Antifreeze
+                  FA 12 Readymix 1 л Concentrat, Germany</a></h4>
+              <div class="rating__block">
+                <form class="rating">
+                  <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                </form>
+                <p class="commets">
+                  <a href="#">Отзывы (10)</a>
+                </p>
+                <p class="remainder">
+                  В наличии: 24 шт.
+                </p>
+              </div>
+              <div class="praram__block">
+                <div class="param__block__icon">
+                  <div class="param__icon__weather">
+                    <a href="#"><img src="img/card summer.png" alt=""> летняя</a>
+                  </div>
+                  <div class="param__icon__new">
+                    <a href="#"><img src="img/card new.png" alt=""> новая</a>
+                  </div>
+                </div>
+                <div class="param__block__image__shina">
+                  <a href="#"><img src="img/shina2.png" alt=""></a>
+                </div>
+              </div>
+              <div class="action__block">
+                <div class="new"><img src="img/hit1.png" alt="">
+                  <p class="action__block__text">Новинка</p>
+                </div>
+                <div class="hits"><img src="img/hit2.png" alt="">
+                  <p class="action__block__text">Хит</p>
+                </div>
+              </div>
+              <div class="cost__block">
+                <div class="new__cost">599 <span>грн</span></div>
+                <div class="old__cost"><span>1 250 грн</span></div>
+              </div>
+              <div class="button__card__block">
+                <div class="logo__callme button__main">
+                  <div class="callme__text button__text">
+                    <a href="#"><img src="img/cart.png" alt="">купить товар</a>
+                  </div>
+                </div>
+              </div>
+              <div class="compare__block">
+                <div class="compare__block__content">
+                  <div class="compare__icon">
+                    <img src="img/card1.png" alt="">
+                  </div>
+                  <div class="compare__text"><a href="#" class="linkcomp" onClick="incrementOne(this)">Сравнить
+                      товар</a>
+                  </div>
+                </div>
+                <div class="compare__block__content__2">
+                  <div class="compare__icon">
+                    <img src="img/card2.png" alt="">
+                  </div>
+                  <div class="compare__text"><a href="#" class="linkcomp2" onClick="incrementTwo(this)">В избранное</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__block__offer__border">
+            <div class="col-12 card__block__offer__section">
+              <p class="mark">Mark</p>
+              <h4><a href="#">Антифриз Fosser Antifreeze
+                  FA 12 Readymix 1 л Concentrat, Germany</a></h4>
+              <div class="rating__block">
+                <form class="rating">
+                  <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                </form>
+                <p class="commets">
+                  <a href="#">Без отзывов</a>
+                </p>
+                <p class="remainder">
+                  В наличии: 24 шт.
+                </p>
+              </div>
+              <div class="praram__block">
+                <div class="param__block__icon">
+                  <div class="param__icon__weather">
+                    <a href="#"><img src="img/card summer.png" alt=""> летняя</a>
+                  </div>
+                  <div class="param__icon__car">
+                    <a href="#"><img src="img/card car.png" alt=""> легковая</a>
+                  </div>
+                  <div class="param__icon__new">
+                    <a href="#"><img src="img/card new.png" alt=""> новая</a>
+                  </div>
+                </div>
+                <div class="param__block__image__shina">
+                  <a href="#"><img src="img/shina3.png" alt=""></a>
+                </div>
+              </div>
+              <div class="action__block">
+                <div class="new"><img src="img/hit1.png" alt="">
+                  <p class="action__block__text">Новинка</p>
+                </div>
+              </div>
+              <div class="cost__block">
+                <div class="new__cost">9 570 <span>грн</span></div>
+                <div class="old__cost"><span>11 250 грн</span></div>
+              </div>
+              <div class="button__card__block">
+                <div class="logo__callme button__main">
+                  <div class="callme__text button__text">
+                    <a href="#"><img src="img/cart.png" alt="">купить товар</a>
+                  </div>
+                </div>
+              </div>
+              <div class="compare__block">
+                <div class="compare__block__content">
+                  <div class="compare__icon">
+                    <img src="img/card1.png" alt="">
+                  </div>
+                  <div class="compare__text"><a href="#" class="linkcomp" onClick="incrementOne(this)">Сравнить
+                      товар</a></div>
+                </div>
+                <div class="compare__block__content__2">
+                  <div class="compare__icon">
+                    <img src="img/card2.png" alt="">
+                  </div>
+                  <div class="compare__text"><a href="#" class="linkcomp2" onClick="incrementTwo(this)">В избранное</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__block__offer__border">
+            <div class="col-12 card__block__offer__section">
+              <p class="mark">Mark</p>
+              <h4><a href="#">Антифриз Fosser Antifreeze</a></h4>
+              <div class="rating__block">
+                <form class="rating">
+                  <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                    <span class="icon"><i class="rating__icon rating__icon--star fa fa-star"></i></span>
+                  </label>
+                </form>
+                <p class="commets">
+                  <a href="#">Отзывы (10)</a>
+                </p>
+                <p class="remainder">
+                  В наличии: 24 шт.
+                </p>
+              </div>
+              <div class="praram__block">
+                <div class="param__block__icon">
+                  <div class="param__icon__weather">
+                    <a href="#"><img src="img/card summer.png" alt=""> летняя</a>
+                  </div>
+                  <div class="param__icon__car">
+                    <a href="#"><img src="img/card car.png" alt=""> легковая</a>
+                  </div>
+                </div>
+                <div class="param__block__image__shina">
+                  <a href="#"><img src="img/shina4.png" alt=""></a>
+                </div>
+              </div>
+              <div class="action__block">
+                <div class="new">
+                </div>
+                <div class="hits">
+                </div>
+                <div class="action">
+                </div>
+              </div>
+              <div class="cost__block">
+                <div class="new__cost">599 <span>грн</span></div>
+              </div>
+              <div class="button__card__block">
+                <div class="logo__callme button__main">
+                  <div class="callme__text button__text">
+                    <a href="#"><img src="img/cart.png" alt="">купить товар</a>
+                  </div>
+                </div>
+              </div>
+              <div class="compare__block">
+                <div class="compare__block__content">
+                  <div class="compare__icon">
+                    <img src="img/card1.png" alt="">
+                  </div>
+                  <div class="compare__text"><a href="#" class="linkcomp" onClick="incrementOne(this)">Сравнить
+                      товар</a></div>
+                </div>
+                <div class="compare__block__content__2">
+                  <div class="compare__icon">
+                    <img src="img/card2.png" alt="">
+                  </div>
+                  <div class="compare__text"><a href="#" class="linkcomp2" onClick="incrementTwo(this)">В
+                      избранное</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer__block">
+    <div class="container">
+      <div class="footer__block__content">
+        <div class="row">
+          <div class="col-5">
+            <div class="footer__content__linkname foot__content__link__line">
+              <div class="footer__link__name">
+                <h4 class="link__name__text"><span>Блок 1</span></h4>
+              </div>
+            </div>
+            <div class="footer__block__subscribe media__subscribe">
+              <div class="subscribe__block">
+                <div class="subscribe__text">
+                  <h3>Будьте в курсе новостей и новинок!</h3>
+                  <h1>Подписывайтесь на рассылку</h1>
+                </div>
+                <div class="subscribe__mail__form">
+                  <div class="search__block">
+                    <form class="search-form">
+                      <p id="mailtext"></p>
+                      <input type="email" id="mailsend" class="input-search"
+                        placeholder="Укажите свой email для подписки" />
+                      <div class="search__button__text button__text">
+                        <input type="submit" value="подписаться" onclick="return validMail()">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-6">
+            <div class="footer__content__linkname">
+              <div class="col-12 footer__link__name">
+                <h4 class="link__name__text"><span>Блок ссылок 1</span></h4>
+              </div>
+              <div class="col-12 footer__link__name">
+                <h4 class="link__name__text"><span>Блок 2</span></h4>
+              </div>
+              <div class="col-12 footer__link__name">
+                <h4 class="link__name__text"><span>Блок ссылок 2</span></h4>
+              </div>
+            </div>
+
+
+
+            <div class="footer__block__subscribe">
+              <div class="link__block">
+                <div class="col-12 link__text__block">
+                  <div class="link__text"><a href="#">Ссылка 1</a></div>
+                  <div class="link__text"><a href="#">Ссылка 2</a></div>
+                  <div class="link__text"><a href="#">Ссылка 3</a></div>
+                  <div class="link__text"><a href="#">Ссылка 4</a></div>
+                </div>
+                <div class="col-12 link__text__block">
+                  <div class="link__text"><a href="#">Ссылка 1</a></div>
+                  <div class="link__text"><a href="#">Ссылка 2</a></div>
+                  <div class="link__text"><a href="#">Ссылка 3</a></div>
+                  <div class="link__text"><a href="#">Ссылка 4</a></div>
+                </div>
+                <div class="col-12 link__text__block">
+                  <div class="link__text"><a href="#">Ссылка 1</a></div>
+                  <div class="link__text"><a href="#">Ссылка 2</a></div>
+                  <div class="link__text"><a href="#">Ссылка 3</a></div>
+                  <div class="link__text"><a href="#">Ссылка 4</a></div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+        <div class="footer__line">
+
+        </div>
+        <div class="row">
+          <div class="col-5 footer__copyrith">
+            <div class="footer__block__social">
+              <div class="logo__block__footer">
+                <img src="img/logo black.png" alt="">
+                <p class="copyrith">© Copyrith 2017. Тестовое задание Wezom</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="footer__block__social">
+              <div class="social__block">
+                <div class="icon__social">
+                  <div class="icon__vk"><a href="#"><i class="fa fa-vk"></i></a></div>
+                  <div class="icon__fc"><a href="#"><i class="fa fa-facebook-f"></i></a></div>
+                  <div class="icon__tw"><a href="#"><i class="fa fa-twitter"></i></a></div>
+                  <div class="icon__yt"><a href="#"><i class="fa fa-youtube"></i></a></div>
+                </div>
+                <div class="wezon">
+                  <div class="logo__wezon"><img src="img/logo mini.png" alt=""></div>
+                  <div class="text__wezon">
+                    <p class="text">Разработка тестового</p>
+                    <a href="#" class="link__wezon">Wezom Agency</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </footer>
+  <div id="openModal" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Перезвоните мне</h3>
+          <a href="#close" title="Close" class="close"><img src="img/module__close.png" alt="" class="line__close"><img
+              src="img/module__close.png" alt="" class="line__close__2"></a>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="modal__phone__block">
+              <p>Номер телефона</p>
+              <input class="phone_mask" type="tel" name="tel" placeholder="+38(0__) ___ - __ - __">
+            </div>
+            <div class="callme__text button__text">
+              <input type="submit" value="Перезвоните мне">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="openModalsign" class="modalsign">
+    <div class="modalsign-dialog">
+      <div class="modalsign-content">
+        <div class="modalsign-header">
+
+          <a href="#close" title="Close" class="close"><img src="img/module__close.png" alt="" class="line__close"><img
+              src="img/module__close.png" alt="" class="line__close__2"></a>
+        </div>
+        <div class="modalsign-body">
+          <div class="modalsign__login__block">
+            <h3 class="modalsign-title">Вход в личный кабинет</h3>
+            <form class="form_auth_style" action="#" method="post" name="loginform">
+              <label>Ваш email</label>
+              <input type="text" name="auth_email" placeholder="mikel_ivanov98@gmail.com" required id="email">
+              <p id="textemail"></p>
+              <label>Пароль</label>
+              <input id="pass" type="password" name="auth_pass" placeholder="*************" required>
+              <p id="textpass"></p>
+              <label class="label__checkbox"><input type="checkbox"> Запомните меня</label>
+              <div class="link__login">
+                <a href="">Забыли пароль?</a><a href="">Регистрация</a>
+              </div>
+              <div class="callme__text button__text">
+                <input onclick="return validForm()" type="submit" value="Войти в личный кабинет">
+              </div>
+            </form>
+          </div>
+          <div class="modalsign__social__block">
+            <h3 class="modalsign-title">Войти с помощью</h3>
+            <div class="social__button">
+              <a href="#" class="facebook"><i class="fa fa-facebook-f"></i>Facebook</a>
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i>Twitter</a>
+              <a href="#" class="google"><i class="fa fa-google"></i>Google</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="form-popup" id="myForm">
+    <form action="#" class="form-container">
+      <h1>Вы успешно подписаны на рассылку</h1>
+      <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+    </form>
+  </div>
+</body>
+
+</html>

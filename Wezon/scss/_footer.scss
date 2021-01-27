@@ -1,0 +1,273 @@
+.footer__block {
+  background-color: #696969;
+  height: auto;
+
+  .col-6 {
+    margin-left: auto;
+  }
+
+  .footer__content__linkname {
+    display: flex;
+    padding: 37px 0;
+
+
+    .link__name__text,
+    .foot__content__link__line {
+      border-bottom: 1px solid #7a7a7a;
+      padding-bottom: 15px;
+
+    }
+
+
+
+    h4 span {
+      margin-bottom: 15px;
+      font-size: 20px;
+      font-weight: 500;
+      color: #cbcbcb;
+      border-bottom: 1px solid #ff8500;
+      padding-bottom: 13px;
+    }
+  }
+
+
+
+
+  // search====================================================
+  .footer__line {
+    border-bottom: 1px solid #757575;
+
+  }
+
+  .subscribe__block {
+    .subscribe__text {
+      h3 {
+        font-weight: bold;
+        font-size: 20px;
+        color: #cbcbcb;
+        margin-bottom: 12px;
+      }
+
+      h1 {
+        font-weight: 900;
+        color: #fff;
+        font-size: 26px;
+        margin-bottom: 12px;
+      }
+    }
+
+    .search__block {
+      display: flex;
+      margin-bottom: 20px;
+
+      .search__button__text {
+
+
+
+        input {
+          padding: 20px 30px;
+          font-weight: bold;
+          font-size: 16px;
+          color: #fff;
+          text-transform: uppercase;
+        }
+      }
+
+      .search-form {
+        display: flex;
+        width: 100%;
+      }
+
+      ::-webkit-input-placeholder {
+        color: #9f9f9f;
+        font-size: 14px;
+      }
+
+      :-moz-placeholder {
+        color: #9f9f9f;
+        font-size: 14px;
+      }
+
+      ::-moz-placeholder {
+        color: #9f9f9f;
+        font-size: 14px;
+      }
+
+      :-ms-input-placeholder {
+        color: #9f9f9f;
+        font-size: 14px;
+      }
+
+
+
+
+      *:focus {
+        outline: none;
+      }
+
+
+
+      &:hover {
+        background-color: #a0a0a0;
+        color: #fff;
+      }
+    }
+
+    .fa {
+      vertical-align: middle;
+    }
+
+    .fa-sort-down {
+      font-size: 14px;
+      margin-left: 16px;
+    }
+
+
+
+    .subnav {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      z-index: 10;
+      transform: translateY(10px);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+
+
+    .input-search {
+      width: 100%;
+      font-size: 16px;
+      border: none;
+      padding: 0;
+      height: 59px;
+      padding: 25px 0 25px 26px;
+      background: #f5f5f5;
+      color: #9f9f9f;
+      transition: background 0.2s;
+
+      &:hover {
+        background: #cac7c7;
+      }
+    }
+
+    .search-btn {
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      height: 52px;
+      width: 52px;
+      color: white;
+      cursor: pointer;
+      background: #f5f5f5;
+    }
+
+  }
+
+
+  .link__block {
+    display: flex;
+
+    .link__text__block {
+      .link__text {
+        margin-bottom: 26px;
+
+        a {
+          font-size: 13px;
+          color: #fff;
+          text-decoration: underline;
+        }
+
+        :hover {
+          text-decoration: none;
+        }
+      }
+
+    }
+  }
+
+  .footer__block__social {
+    margin-top: 26px;
+    margin-bottom: 10px;
+
+    .logo__block__footer {
+      display: flex;
+      align-items: center;
+
+      p {
+        border-left: 1px solid #787878;
+        padding: 20px;
+        margin-left: 23px;
+        font-size: 12px;
+        color: #a0a9b2;
+
+      }
+    }
+
+    .social__block {
+      display: flex;
+      justify-content: space-between;
+
+      .icon__social {
+        display: flex;
+        align-items: center;
+
+        a {
+          color: #fff;
+
+
+          i {
+            font-size: 16px;
+            border: 1px solid #7b8092;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            margin-right: 10px;
+          }
+
+          :hover {
+            border: 1px solid #ffc925;
+            color: #ffc925;
+          }
+        }
+
+      }
+
+      .wezon {
+        display: flex;
+        align-items: center;
+
+        .logo__wezon {
+          border-right: 1px solid #787878;
+          padding: 20px;
+          margin-right: 18px;
+
+
+        }
+
+        .text__wezon {
+          p {
+            font-size: 12px;
+            color: #a0a9b2;
+            margin-bottom: 8px;
+          }
+
+          a {
+            font-size: 14px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .foot__content__link__line {
+    display: block !important;
+
+  }
+
+
+}
