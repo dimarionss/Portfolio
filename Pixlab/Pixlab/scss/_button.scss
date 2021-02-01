@@ -1,0 +1,72 @@
+/*=================================Button====================================*/
+.header__button,
+.main__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  .button {
+
+    font-weight: 900;
+    color: #FFFFFF;
+    width: 259px;
+    height: 56px;
+    margin-bottom: 70px;
+    position: relative;
+    background-color: transparent;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: $main_color;
+
+    &:after {
+      padding: 23px 0;
+      border: 1px solid #fff;
+      position: absolute;
+      top: -6px;
+      left: -6px;
+      height: 100%;
+      width: 100%;
+      content: "получить программу";
+      z-index: 0;
+      transition: transform 0.2s ease-in, width 0.2s ease-out 0.2s;
+    }
+
+    &:hover {
+      &:after {
+        transform: translate(6px, 6px);
+        width: calc(100% - 10px);
+      }
+    }
+
+    &:active {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
+.icon__block__item__img {
+  position: relative;
+
+  :nth-child(even) {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+    path,
+    rect,
+    ellipse {
+      opacity: 0.3;
+    }
+  }
+}
+
+/*=================================Button end====================================*/
